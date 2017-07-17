@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Seed Life Skills: Curriculim Request Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="badges.css" />
+<script src="seed.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+<style type="text/css">
+	.required{
+		color:red;
+		font-size: .8em;
+		margin-bottom: 20px;
+	}
+	
+	form {
+	  margin: 2% ;
+	  background-color: #f2f5fc;
+	  padding:2%;
+	  border-radius: 20px;
+	  }
+
+	textarea, input{
+		 width: 90%;
+		 height:auto;
+		 font-size: 1.1em;
+		 display:block;
+		 padding: .5em;
+		 overflow: scroll;
+	 }
+
+	input[type="submit"]{
+		 background-color: #3573ac;
+		 width:50%;
+		 height:auto;
+		 border-radius: 20px;
+		 border:#c9e6fc 2px solid;
+		 margin: 15px auto;
+		 color:white;
+		 font-size: 1.25em;
+		 overflow: auto;
+	}
+	
+  label{
+	  font-weight: bold;
+	  padding-top: 20px;
+	  display: block;
+  }
+  select{
+	  -webkit-appearance: menulist-button;
+	  font-size: 16px;
+  }
+  
+  /* ------------- small stuff ------------------ */
+
+@media only screen 
+and (max-width : 600px) 
+{
+	
+form {
+  margin: 0;
+  }
+
+
+}
+</style>
+
+</head>
+<body>
+<a href="index.html">	
+	<header>
+	</header>
+</a>
+
+<main>
+<h1>Curriculum Request form</h1>
+
+<p>In order to give you access to our curriculum materials we need to get a few pieces of information, including your email address.<br> Please be assured that we will <b>never</b> sell or redistribute this information.</p>
+<p class="required">* Required questions</p>
+
+<div class="ss-form">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdTo3bIimn8z4um4tw7szxjt_Jm8cJEudsXjFpHuVXf4nmU0A/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+
+<label class="ss-q-item-label" for="entry.1947482082">First Name <span class="required" aria-hidden="true">*</span></label>
+<input type="text" name="entry.1947482082" value="" class="ss-q-short" id="entry.1947482082" dir="auto" aria-label="First Name  " aria-required="true" required>
+
+<label class="ss-q-item-label" for="entry_1365346255">Last Name<span class="required" aria-hidden="true">*</span></label>
+<input type="text" name="entry_1365346255" value="" class="ss-q-short" id="entry_1365346255" dir="auto" aria-label="Last Name  " aria-required="true" required>
+
+<label class="ss-q-item-label" for="entry_1108396899">Email <span class="required" aria-hidden="true">*</span></label>
+<input type="email" name="entry_1108396899" value="" class="ss-q-short" id="entry_1108396899" dir="auto" placeholder="Please enter a valid email address." aria-label="Email  Please enter a valid email address" aria-required="true" required="" title="Please enter a valid email address">
+
+<!-- Confirm email field, not sent to server. Checked with JS. -->
+
+<label class="" for="confirmEmail">Confirm Email <span class="required">*</span></label>
+<input type="email" id="confirmEmail" placeholder="Re-enter your email address" aria-label="Confirm Email" aria-required="true" required title="Confirm Email" onchange="checkEmail()">
+
+<label class="ss-q-item-label" for="entry_178398614">School Name<span class="required" aria-hidden="true">*</span></label>
+<input name="entry_178398614" class="ss-q-long" id="entry_178398614" dir="auto" aria-label="School  " aria-required="true" required>
+
+<label class="ss-q-item-label" for="entry_981887598">School Address 1 <span class="required" aria-hidden="true">*</span></label>
+<input type="text" name="entry_981887598" value="" class="ss-q-short" id="entry_981887598" dir="auto" aria-label="School Address 1  " aria-required="true" required title="">
+
+<label class="ss-q-item-label" for="entry.1749996381">School Address 2
+(if required)</label>
+<input type="text" name="entry.1749996381" value="" class="ss-q-short" id="entry.1749996381" dir="auto" aria-label="School Address 2 (if required) " title="">
+
+<label class="ss-q-item-label" for="entry.1405263609">City<span class="required" aria-hidden="true">*</span></label>
+<input type="text" name="entry.1405263609" value="" class="ss-q-short" id="entry.1405263609" dir="auto" aria-label="City  " aria-required="true" required title="">
+
+<label class="ss-q-item-label" for="entry_1205033602">State <span class="required" aria-hidden="true">*</span></label>
+
+	<select name="entry_1205033602" id="entry_1205033602" aria-label="State  " aria-required="true" required>
+	<option label="Please Select" value=""></option>
+	<option value="AL">AL</option> 
+	<option value="AK">AK</option> 
+	<option value="AZ">AZ</option> 
+	<option value="AR">AR</option> 
+	<option value="CA">CA</option> 
+	<option value="CO">CO</option> 
+	<option value="CT">CT</option> 
+	<option value="DE">DE</option> 
+	<option value="DC">DC</option> 
+	<option value="FL">FL</option> 
+	<option value="GA">GA</option> 
+	<option value="HI">HI</option> 
+	<option value="ID">ID</option> 
+	<option value="IL">IL</option> 
+	<option value="IN">IN</option> 
+	<option value="IA">IA</option> 
+	<option value="KS">KS</option> 
+	<option value="KY">KY</option> 
+	<option value="LA">LA</option> 
+	<option value="ME">ME</option> 
+	<option value="MD">MD</option> 
+	<option value="MA">MA</option> 
+	<option value="MI">MI</option> 
+	<option value="MN">MN</option> 
+	<option value="MS">MS</option> 
+	<option value="MO">MO</option> 
+	<option value="MT">MT</option> 
+	<option value="NE">NE</option> 
+	<option value="NV">NV</option> 
+	<option value="NH">NH</option> 
+	<option value="NJ">NJ</option> 
+	<option value="NM">NM</option> 
+	<option value="NY">NY</option> 
+	<option value="NC">NC</option> 
+	<option value="ND">ND</option> 
+	<option value="OH">OH</option> 
+	<option value="OK">OK</option> 
+	<option value="OR">OR</option> 
+	<option value="PA">PA</option> 
+	<option value="RI">RI</option> 
+	<option value="SC">SC</option> 
+	<option value="SD">SD</option> 
+	<option value="TN">TN</option> 
+	<option value="TX">TX</option> 
+	<option value="UT">UT</option> 
+	<option value="VT">VT</option> 
+	<option value="VA">VA</option> 
+	<option value="WA">WA</option> 
+	<option value="WV">WV</option> 
+	<option value="WI">WI</option> 
+	<option value="WY">WY</option>
+	
+	</select>
+
+
+<label class="ss-q-item-label" for="entry_252868524">Zipcode <span class="required" aria-hidden="true">*</span></label>
+
+<input type="text" pattern="(\d{5}([\-]\d{4})?)" name="entry_252868524" value="" class="ss-q-short" id="entry_252868524" dir="auto" aria-label="Must be a whole number" aria-required="true" required >
+
+<label class="ss-q-item-label" for="entry.309199193">Comments</label>
+<textarea name="entry.309199193" rows="8" class="ss-q-long" id="entry.309199193" dir="auto" aria-label="Comments  "></textarea>
+
+
+<input type="hidden" name="draftResponse" value="[null,null,&quot;-5163281684619707244&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+<input type="hidden" name="fbzx" value="-6151093623708261421">
+
+<input type="submit" name="submit" value="Submit information" id="ss-submit" >
+</form></div>
+
+</main>
+<footer>
+		Copyright ©2017 by <a href="http://seedlifeskills.org">Seed Life Skills.</a>
+</footer>
+<script>
+	animateNext("ul li",500);
+	animateNext(".chunk",500);
+	function checkEmail(){
+		var email = document.getElementById("entry_1108396899"), 
+			confirmEmail = document.getElementById("confirmEmail");
+		if (email.value !== confirmEmail.value){
+			alert("Email values do not match. Please renter.");
+			confirmEmail.value="";
+		}
+	}
+</script>
+</body>
+</html>

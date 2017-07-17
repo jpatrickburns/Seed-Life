@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Seed Life Skills: Money Matters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../styles.css" type="text/css" rel="stylesheet">
+
+<link rel="stylesheet" href="badges.css" />
+<script src="seed.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+<style type="text/css">
+</style>
+
+</head>
+<body>
+<div id="anim">	
+	
+		<div class="circle circle01"> </div>
+	<div class="circle circle02"> </div>
+
+</div>
+	
+<a href="index.html">	
+	<header>
+	</header>
+</a>
+<div id="backArea">
+<a href="index.html" >
+	<img src="images/back.png" alt=""> </a>
+</div> 
+<main>
+<div id="bg" style="display:none; opacity:0;" >
+</div>	
+<div id="popup" class="popup" >
+	<p>Would you like to access the curriculum material associated with these merit badges?</p>
+  <span class="popuptext" id="myPopup"></span>
+  <a href="form.html" class="toggle" target="_blank"> Yes</a>
+  <a href="#" class="toggle"> No, thank you.</a>
+</div>
+
+<h1>Money Matters
+</h1>
+
+<ul><li> Practicing financial management now, will increase my financial opportunities later.</li>
+<li> Pursuing education and training now, will increase my financial opportunities later.</li>
+<li> Developing interests that excite me now, can help to guide my career choices later.</li>
+<li> Consumers have rights and responsibilities.</li>
+<li> Labels provide valuable consumer information.</li>
+</ul>
+
+<h2>Choose which curriculum material you're interested in downloading:</h2>
+<div id="badges">	
+<a class="chunk" href="#" onclick="showPopup()"><img src="images/MB_vocationAndCareers.png" alt="" /> 
+	<dl><dt>Vocation & Careers</dt>
+<dd>●	Vocation: Finding Your Calling</dd>
+<dd>●	Investigate: Tools for Career & College Prep</dd>
+<dd>●	The More You Learn, the More You Earn</dd>
+<dd>●	Entrepreneurship 101</dd>  </dl>
+	</a>
+	
+<a class="chunk" href="#" ><img src="images/MB_consumerEconomics.png" alt="" />
+<dl>	<dt>Consumer Economics</dt>
+<dd>●	Planning a Trip - Budget for Travel!</dd>
+<dd>●	Consumer Rights and Consumer Advocacy</dd></dl>
+	</a>
+	
+<a class="chunk" href="#" ><img src="images/MB_savvyShopper.png" alt="" /> 
+<dl>	<dt>Savvy Shopper</dt>
+	
+<dd>●	Shop Smart, Save Money </dd>
+<dd>●	Food Media: Marketing Savvy</dd>
+<dd>●	Responsible Consumerism: Zero Waste</dd></dl>
+</a>
+
+
+</div>
+</main>
+<footer>
+		Copyright ©2017 by <a href="http://seedlifeskills.org">Seed Life Skills.</a>
+</footer>
+<script>
+	animateNext("ul li",500);
+	animateNext(".chunk",500);
+
+</script>
+</body>
+</html>
