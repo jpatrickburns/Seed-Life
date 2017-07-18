@@ -1,11 +1,6 @@
 //called when everything is loaded
-if (document.addEventListener) {                
-// For all major browsers, except IE 8 and earlier
+
     document.addEventListener("DOMContentLoaded", allLoaded);
-} else if (document.attachEvent) {              
-// For IE 8 and earlier versions
-    document.attachEvent("onreadystatechange", allLoaded);
-}
 
 function allLoaded(event) {
 //console.log("DOM fully loaded and parsed");
