@@ -1,6 +1,6 @@
 //called when everything is loaded
 
-    document.addEventListener("DOMContentLoaded", allLoaded);
+document.addEventListener("DOMContentLoaded", allLoaded);
 
 function allLoaded(event) {
 //console.log("DOM fully loaded and parsed");
