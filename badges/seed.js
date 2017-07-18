@@ -22,7 +22,7 @@ function allLoaded(event) {
 		chunks[i].onclick = togglePop;
 	}
 	var toggles = document.querySelectorAll("a.toggle");
-	for (var j = 0; i < toggles.length; i++) {
+	for (i = 0; i < toggles.length; i++) {
 		toggles[i].onclick = togglePop;
 	}
 }
