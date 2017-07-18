@@ -1,58 +1,42 @@
+function animateNext(what, delay) {
+	var dudes = document.querySelectorAll(what),
+		i = 0;
+	doIt();
+	//console.log(dudes.length);
 
-  function animateNext(what,delay) {
-  var dudes = document.querySelectorAll(what),
-  	i =0;
-  doIt();
-  //console.log(dudes.length);
-  function doIt(){
-  if (i<dudes.length) {
-	  dudes[i].classList.add('comeIn');
-	  i++;
-  	setTimeout(doIt, delay);  
-  }
- }
-
+	function doIt() {
+		if (i < dudes.length) {
+			dudes[i].classList.add('comeIn');
+			i++;
+			setTimeout(doIt, delay);
+		}
+	}
+}
 // On load
+document.addEventListener("DOMContentLoaded", allLoaded);
 
-
-if (document.addEventListener) {                
-// For all major browsers, except IE 8 and earlier
-    document.addEventListener("DOMContentLoaded", allLoaded);
-    } else if (document.attachEvent) {             
-// For IE 8 and earlier versions
-    document.attachEvent("onreadystatechange", allLoaded);
-	}
-}
-
-function allLoaded(event) {	
+function allLoaded(event) {
 	console.log("DOM fully loaded and parsed");
- 
 	var chunks = document.getElementsByClassName("chunk");
-		 
-	for (var i = 0; i<chunks.length; i++){
-		chunks[i].onclick=togglePop;
+	for (var i = 0; i < chunks.length; i++) {
+		chunks[i].onclick = togglePop;
 	}
-	var toggles = document.querySelectorAll("a.toggle")
-	for (var i = 0; i<toggles.length; i++){
-		toggles[i].onclick=togglePop;
+	var toggles = document.querySelectorAll("a.toggle");
+	for (var j = 0; i < toggles.length; i++) {
+		toggles[i].onclick = togglePop;
 	}
 }
-	
-function togglePop(){
+
+function togglePop() {
 	//console.log("It worked!");
 	var myPop = document.getElementById("popup"),
-	bg = document.querySelector("#bg");
+		bg = document.querySelector("#bg");
 	myPop.classList.toggle("scaleUp");
-	
-	if (bg.style.display == "none"){
-		bg.style.display ="block";
+	if (bg.style.display == "none") {
+		bg.style.display = "block";
 		bg.style.opacity = 1;
-	}else{
-		bg.style.display ="none";
+	} else {
+		bg.style.display = "none";
 		bg.style.opacity = 0;
-
 	}
 }
-
-		
-
